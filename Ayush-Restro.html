@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Food Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FoodExpress</div>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Your Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Fresh Food Delivered Fast</h1>
+      <p>Explore our menu and order your favorites now!</p>
+      <a href="#menu" class="btn">Browse Menu</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <h2>Popular Dishes</h2>
+      <div class="grid">
+        <img src="images/pizza.jpeg" alt="Pizza">
+        <img src="images/burger.jpeg" alt="Burger">
+        <img src="images/pasta.jpeg" alt="Pasta">
+        <img src="images/salad.jpeg" alt="Salad">
+        <img src="images/soda.jpeg" alt="Soda">
+        <img src="images/menu-restaurant-vintage-table.jpg" alt="Restaurant Interior">
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Menu</h2>
+      <div id="menu-items"></div>
+    </section>
+
+    <section class="order" id="order">
+      <h2>Your Order</h2>
+      <ul id="order-list"></ul>
+      <input type="text" id="discount-code" placeholder="Enter Discount Code">
+      <button onclick="applyDiscount()">Apply Discount</button>
+      <p id="total-price">Total: $0.00</p>
+      <button onclick="confirmOrder()">Confirm Order</button>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 FoodExpress | Designed with ❤️ by Ayush</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
